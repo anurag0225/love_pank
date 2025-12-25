@@ -1,31 +1,31 @@
 body {
+  margin: 0;
+  padding: 0;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #ff758c, #ff7eb3);
-  font-family: Arial, sans-serif;
+  overflow: hidden; /* No button bahar na jaye */
 }
 
 .container {
+  position: relative;
   background: white;
-  padding: 40px;
+  padding: 30px;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-}
-
-h1 {
-  margin-bottom: 30px;
+  width: 90%;
+  max-width: 400px; /* laptop ke liye */
 }
 
 .btn-box {
   position: relative;
-  height: 120px;
+  height: 150px;
 }
 
-button {
-  padding: 12px 25px;
+#yes, #no {
+  padding: 12px 20px;
   font-size: 16px;
   border: none;
   border-radius: 8px;
@@ -41,10 +41,4 @@ button {
   background: #dc3545;
   color: white;
   position: absolute;
-  left: 150px;
-}
-
-#result {
-  margin-top: 25px;
-  color: #e60073;
 }
