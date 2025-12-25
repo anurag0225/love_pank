@@ -2,6 +2,7 @@ const noBtn = document.getElementById("no");
 const yesBtn = document.getElementById("yes");
 const container = document.querySelector(".container");
 const result = document.getElementById("result");
+noBtn.addEventListener("touchstart", moveNoBtn);
 
 // minimum distance between Yes & No button
 const MIN_GAP = 120;
